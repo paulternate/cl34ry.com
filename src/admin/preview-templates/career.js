@@ -2,8 +2,8 @@ import htm from 'https://unpkg.com/htm?module';
 
 const html = htm.bind(h);
 
-// Preview component for About Page
-const About = createClass({
+// Preview component for Career Page
+const Career = createClass({
   render() {
     const entry = this.props.entry;
 
@@ -19,4 +19,4 @@ const About = createClass({
   },
 });
 
-export default About;
+export default Career;

@@ -1,5 +1,5 @@
 import Home from '/admin/preview-templates/home.js';
-import About from '/admin/preview-templates/about.js';
+import Career from '/admin/preview-templates/career.js';
 import Blog from '/admin/preview-templates/blog.js';
 import Article from '/admin/preview-templates/article.js';
 import Projects from '/admin/preview-templates/projects.js';
@@ -8,7 +8,7 @@ import Contact from '/admin/preview-templates/contact.js';
 
 // Register preview templates
 CMS.registerPreviewTemplate('home', Home);
-CMS.registerPreviewTemplate('about', About);
+CMS.registerPreviewTemplate('career', Career);
 CMS.registerPreviewTemplate('blog', Blog);
 CMS.registerPreviewTemplate('article', Article);
 CMS.registerPreviewTemplate('projects', Projects);

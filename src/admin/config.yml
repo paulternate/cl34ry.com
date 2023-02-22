@@ -91,10 +91,10 @@ collections:
               required: false,
             }
 
-      # About page
-      - label: "About Page"
-        name: "about"
-        file: "src/pages/about.md"
+      # Career page
+      - label: "Career Page"
+        name: "career"
+        file: "src/pages/career.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: Subtitle, name: subtitle, widget: string, required: false }
