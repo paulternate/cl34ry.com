@@ -33,7 +33,7 @@
     align-items:flex-start;
     justify-content: flex-start;
     width: 90%;
-    height: 140px;
+    height: 200;
     padding: 1.5rem;
     border-radius: 20px;
     margin-bottom: 1.5rem;
@@ -75,6 +75,12 @@
 .experience-details > h5 {
     font-family: var(--primaryFont);
     font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.experience-details > p {
+    font-family: var(--primaryFont);
+    font-size: .9rem;
     font-weight: 600;
 }
 

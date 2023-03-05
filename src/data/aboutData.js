@@ -1,6 +1,7 @@
 export const aboutData = {
-    title: "Who I am",
-    description1: "My name's Jane. I'm a web designer and developer based in Southampton, UK.",
-    description2: "During the day I work as a lead developer at a local agency and in the evening I  work on freelance projects and utilize the time to built my own products. I spent my leisure hours writing articles and poetry. Right now I'm also trying a hand at machine learning and AI. I love to learn and explore new arenas.",
-    image: 2
-}
+  title: "Hello",
+  description1:
+    "My name's Paul. I'm a Sr. Ecosystem Architect at Venafi, based in the Pacific Northwest.",
+  description2: "I have years of experience building relationships with technology partners and supporting integration development. I have a diverse range of interests and talents. I'm a self-starter with a passion for learning and a desire to help others. I draw inspiration for photography and design from the natural surroundings of the Pacific Northwest. In my free time, I enjoy disc golf and spending time with my family.",
+  image: 1,
+};
