@@ -8,7 +8,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import './ProjectPage.css'
 import { SingleProject } from '../../components';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { projectsData } from '../../data/projectsData'
+import { projectsPhotoData } from '../../data/projectsPhotoData'
 import { headerData } from '../../data/headerData'
 
 function ProjectPage() {
@@ -16,7 +16,7 @@ function ProjectPage() {
     const [search, setSearch] = useState('')
     const { theme } = useContext(ThemeContext);
 
-    const filteredArticles = projectsData.filter((project) => {
+    const filteredArticles = projectsPhotoData.filter((project) => {
         const content = project.projectName + project.projectDesc + project.tags
         return content.toLowerCase().includes(search.toLowerCase())
     })
@@ -70,13 +70,13 @@ function ProjectPage() {
     return (
         <div className="projectPage" style={{backgroundColor: theme.secondary}}>
             <Helmet>
-                <title>{headerData.name} | Projects</title>
+                <title>{headerData.name} | Photo Projects</title>
             </Helmet>
             <div className="projectPage-header" style={{backgroundColor:theme.primary}}>
                 <Link to="/">
                         <AiOutlineHome className={classes.home}/>
                 </Link>
-                <h1 style={{color: theme.secondary}}>Projects</h1>
+                <h1 style={{color: theme.secondary}}>Photo Projects</h1>
             </div>
            <div className="projectPage-container">
                <div className="projectPage-search">
@@ -93,7 +93,7 @@ function ProjectPage() {
                                 desc={project.projectDesc}
                                 tags={project.tags}
                                 code={project.code}
-                                demo={project.demo}
+                                seeMore={project.seeMore}
                                 image={project.image} 
                             />
                         ))}

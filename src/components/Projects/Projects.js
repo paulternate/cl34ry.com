@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { projectsData } from '../../data/projectsData'
+import { projectsPhotoData } from '../../data/projectsPhotoData'
 import { HiArrowRight } from "react-icons/hi";
 
 import './Projects.css'
@@ -45,14 +45,14 @@ function Projects() {
 
     return (
         <>
-            {projectsData.length > 0 && (
+            {projectsPhotoData.length > 0 && (
                 <div className="projects" id="projects" style={{backgroundColor: theme.secondary}}>
                     <div className="projects--header">
-                        <h1 style={{color: theme.primary}}>Projects</h1>
+                        <h1 style={{color: theme.primary}}>Photo Projects</h1>
                     </div>
                     <div className="projects--body">
                         <div className="projects--bodyContainer">
-                            {projectsData.slice(0, 3).map(project => (
+                            {projectsPhotoData.slice(0, 3).map(project => (
                                 <SingleProject
                                     theme={theme}
                                     key={project.id}
@@ -61,13 +61,13 @@ function Projects() {
                                     desc={project.projectDesc}
                                     tags={project.tags}
                                     code={project.code}
-                                    demo={project.demo}
+                                    seeMore={project.seeMore}
                                     image={project.image}
                                 />
                             ))}
                         </div> 
 
-                        {projectsData.length > 3 && (
+                        {projectsPhotoData.length > 3 && (
                             <div className="projects--viewAll">
                                 <Link to="/projects">
                                     <button className={classes.viewAllBtn}>

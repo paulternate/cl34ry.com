@@ -1,12 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { FaPlay, FaCode } from 'react-icons/fa';
+import { FaEye } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 
 import placeholder from '../../../assets/png/placeholder.png';
 import './SingleProject.css';
 
-function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
+function SingleProject({ id, name, desc, tags, seeMore, image, theme }) {
     const useStyles = makeStyles((t) => ({
         iconBtn: {
             display: 'flex',
@@ -51,25 +51,26 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                     <img src={image ? image : placeholder} alt={name} />
                     <div className='project--showcaseBtn'>
                         <a
-                            href={demo}
-                            target='_blank'
-                            rel='noreferrer'
+                            href={seeMore}
                             className={classes.iconBtn}
                             aria-labelledby={`${name
                                 .replace(' ', '-')
                                 .toLowerCase()} ${name
                                 .replace(' ', '-')
-                                .toLowerCase()}-demo`}
+                                .toLowerCase()}-seeMore`}
                         >
-                            <FaPlay
+                            <FaEye
                                 id={`${name
                                     .replace(' ', '-')
-                                    .toLowerCase()}-demo`}
+                                    .toLowerCase()}-seeMore`}
                                 className={classes.icon}
-                                aria-label='Demo'
+                                aria-label='See More'
                             />
                         </a>
-                        <a
+                        
+                        {/* Removing the code button for now */}
+
+                        {/* <a
                             href={code}
                             target='_blank'
                             rel='noreferrer'
@@ -87,7 +88,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                                 className={classes.icon}
                                 aria-label='Code'
                             />
-                        </a>
+                        </a> */}
                     </div>
                 </div>
                 <p
