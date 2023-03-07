@@ -39,11 +39,25 @@
 .project-container {
     margin-top: 5rem;
     width: 100%;
+    overflow: hidden auto !important;
 }
 
-.project-grid {
-    display: flex;
-    gap: 4rem; 
+.MuiDialog-paperFullScreen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden  auto !important;
+}
+
+.image-grid {
+    margin: 0 auto;
+    overflow: hidden auto !important;
+}
+
+.ImageList {
+    overflow-y: auto !important;
 }
 
 @media (min-width: 992px) and (max-width: 1380px) {
