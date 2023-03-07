@@ -1,4 +1,4 @@
-.projectPage {
+.ProjectDetailsPage {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +6,7 @@
     min-height: 100vh;
 }
 
-.projectPage-header {
+.ProjectDetailsPage-header {
     height: 35vh;
     width: 100%;
     display: flex;
@@ -15,12 +15,12 @@
     position: relative;
 }
 
-.projectPage-header > h1 {
+.ProjectDetailsPage-header > h1 {
     font-size: 4rem;
     font-family: var(--primaryFont);
 }
 
-.projectPage-container {
+.ProjectDetailsPage-container {
     padding: 3rem 2rem;
     width: 100%;
     display: flex;
@@ -29,7 +29,7 @@
     justify-content: flex-start;
 }
 
-.projectPage-search {
+.ProjectDetailsPage-search {
     width: 100%;
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@
 }
 
 @media screen and (max-width: 992px) {
-    .projectPage-header {
+    .ProjectDetailsPage-header {
         height: 25vh;
         width: 100%;
         display: flex;
@@ -71,15 +71,15 @@
 }
 
 @media screen and (max-width: 550px) {
-    .projectPage-header h1 {
+    .ProjectDetailsPage-header h1 {
         font-size: 3rem;
     }
 }
 @media screen and (max-width: 400px) {
-    .projectPage-header {
+    .ProjectDetailsPage-header {
         height: 20vh;
     }
-    .projectPage-header h1 {
+    .ProjectDetailsPage-header h1 {
         font-size: 2.5rem;
     }
 }
