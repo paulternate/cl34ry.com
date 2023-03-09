@@ -8,7 +8,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import './ProjectPage.css'
 import { SingleProject } from '../../components';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { projectsPhotoData } from '../../data/projectsPhotoData'
+import { ProjectsPhotosetData } from '../../data/projectsPhotosetData'
 import { headerData } from '../../data/headerData'
 
 function ProjectPage() {
@@ -16,7 +16,7 @@ function ProjectPage() {
     const [search, setSearch] = useState('')
     const { theme } = useContext(ThemeContext);
 
-    const filteredArticles = projectsPhotoData.filter((project) => {
+    const filteredArticles = ProjectsPhotosetData.filter((project) => {
         const content = project.projectName + project.projectDesc + project.tags
         return content.toLowerCase().includes(search.toLowerCase())
     })

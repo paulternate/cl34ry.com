@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { projectsPhotoData } from '../../data/projectsPhotoData'
+import { ProjectsPhotosetData } from '../../data/projectsPhotosetData'
 import { HiArrowRight } from "react-icons/hi";
 
 import './Projects.css'
@@ -45,14 +45,14 @@ function Projects() {
 
     return (
         <>
-            {projectsPhotoData.length > 0 && (
+            {ProjectsPhotosetData.length > 0 && (
                 <div className="projects" id="projects" style={{backgroundColor: theme.secondary}}>
                     <div className="projects--header">
                         <h1 style={{color: theme.primary}}>Photo Projects</h1>
                     </div>
                     <div className="projects--body">
                         <div className="projects--bodyContainer">
-                            {projectsPhotoData.slice(0, 3).map(project => (
+                            {ProjectsPhotosetData.slice(0, 3).map(project => (
                                 <SingleProject
                                     theme={theme}
                                     key={project.id}
@@ -67,7 +67,7 @@ function Projects() {
                             ))}
                         </div> 
 
-                        {projectsPhotoData.length > 3 && (
+                        {ProjectsPhotosetData.length > 3 && (
                             <div className="projects--viewAll">
                                 <Link to="/projects">
                                     <button className={classes.viewAllBtn}>

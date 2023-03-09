@@ -263,7 +263,7 @@ yarn start
 │   │   ├── educationData.js
 │   │   ├── experienceData.js
 │   │   ├── headerData.js
-│   │   ├── projectsPhotoData.js
+│   │   ├── ProjectsPhotosetData.js
 │   │   ├── servicesData.js
 │   │   ├── skillsData.js
 │   │   ├── socialsData.js
@@ -326,7 +326,7 @@ export const headerData = {
 
 > #### Education details - [`src/data/educationData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/educationData.js) 
 
-> #### Enter your Projects - [`src/data/projectsPhotoData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/projectsPhotoData.js)
+> #### Enter your Projects - [`src/data/ProjectsPhotosetData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/ProjectsPhotosetData.js)
 
 > #### Add your Skills - [`src/data/skillsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/skillsData.js)
 

@@ -2,7 +2,7 @@
 // import { ImageList, ImageListItem } from '@mui/material';
 
 // // import { ThemeContext } from '../../contexts/ThemeContext';
-// // import { projectsPhotoData } from '../../data/projectsPhotoData'
+// // import { ProjectsPhotosetData } from '../../data/ProjectsPhotosetData'
 // // import { HiArrowRight } from "react-icons/hi";
 
 // import "./ProjectDetails.css";
