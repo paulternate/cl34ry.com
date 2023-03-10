@@ -33,7 +33,7 @@
     align-items:flex-start;
     justify-content: flex-start;
     width: 90%;
-    height: 200;
+    height: flex;       
     padding: 1.5rem;
     border-radius: 20px;
     margin-bottom: 1.5rem;
@@ -170,6 +170,18 @@
 
 @media screen and (max-width: 600px) {
     .experience-description > h1{
+        font-size: 2.5rem;
+    }
+    .experience-description > h6{
+        font-size: 2.5rem;
+    }
+    .experience-description > h4{
+        font-size: 1.5rem;
+    }
+    .experience-description > h5{
+        font-size: 2.5rem;
+    }
+    .experience-description > p{
         font-size: 2.5rem;
     }
 }

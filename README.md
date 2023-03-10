@@ -44,8 +44,8 @@
 <br /><br />
 
 # Demo :movie_camera:
-![](https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/demo.gif)
-## View live demo [here](https://dev-portfolio-template.netlify.app/).
+![](https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/seeMore.gif)
+## View live seeMore [here](https://dev-portfolio-template.netlify.app/).
 
 <br />
 
@@ -263,7 +263,7 @@ yarn start
 │   │   ├── educationData.js
 │   │   ├── experienceData.js
 │   │   ├── headerData.js
-│   │   ├── projectsData.js
+│   │   ├── ProjectsPhotosetData.js
 │   │   ├── servicesData.js
 │   │   ├── skillsData.js
 │   │   ├── socialsData.js
@@ -326,7 +326,7 @@ export const headerData = {
 
 > #### Education details - [`src/data/educationData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/educationData.js) 
 
-> #### Enter your Projects - [`src/data/projectsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/projectsData.js)
+> #### Enter your Projects - [`src/data/ProjectsPhotosetData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/ProjectsPhotosetData.js)
 
 > #### Add your Skills - [`src/data/skillsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/skillsData.js)
 
