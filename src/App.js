@@ -26,7 +26,7 @@ function App() {
           <Route path="/projects" exact component={ProjectPage} />
           <Route path="/projects/project-details-places" exact component={ProjectDetailsPagePlaces} />
           <Route path="/projects/project-details-people" exact component={ProjectDetailsPagePeople} />
-          <Route path="/projects/project-details-design" exact component={ProjectDetailsPageDesign} />
+          <Route path="/projects/project-details-designs" exact component={ProjectDetailsPageDesign} />
           <Redirect to="/" />
         </Switch>
       </Router>

@@ -112,7 +112,7 @@ function ProjectDetailsPageDesign() {
       }));
 
     const images = importAll(
-      require.context("../../../src/assets/images/designs/", false, /\.(png|jpe?g|svg)$/)
+      require.context("../../../src/assets/images/designs", false, /\.(png|jpe?g|svg)$/)
     );
 
     const itemData = images.map((image) => ({
