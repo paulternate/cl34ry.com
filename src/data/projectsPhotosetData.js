@@ -1,4 +1,4 @@
-import one from "../assets/images/photos/nature/P1130650-2.jpg";
+import one from "../assets/images/photos/places/P1130650-2.jpg";
 import two from "../assets/images/photos/people/P1090064.jpg"; 
 import three from '../assets/images/designs/Logo-Square.jpg';
 

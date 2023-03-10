@@ -112,7 +112,7 @@ function ProjectDetailsPagePlaces() {
       }));
 
     const images = importAll(
-      require.context("../../../src/assets/images/photos/nature", false, /\.(png|jpe?g|svg)$/)
+      require.context("../../../src/assets/images/photos/places", false, /\.(png|jpe?g|svg)$/)
     );
 
     const itemData = images.map((image) => ({
