@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import { AiOutlineHome } from "react-icons/ai";
-import { ImageList, ImageListItem, ImageListItemBar, Dialog, DialogContent, DialogTitle, Grid, IconButton } from "@mui/material";
-import { MdZoomIn } from "react-icons/md";
+import { ImageList, ImageListItem, Dialog, DialogContent, Grid, } from "@mui/material";
+// import { MdZoomIn } from "react-icons/md";
 
 
 import "./ProjectDetailsPageDesign.css";
