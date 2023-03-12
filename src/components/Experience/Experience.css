@@ -166,6 +166,9 @@
         font-size: 1.05rem;
         line-height: 126%;
     }
+    .experience-details > p {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -181,8 +184,8 @@
     .experience-description > h5{
         font-size: 2.5rem;
     }
-    .experience-description > p{
-        font-size: 2.5rem;
+    .experience-details > p{
+        display: none;
     }
 }
 
