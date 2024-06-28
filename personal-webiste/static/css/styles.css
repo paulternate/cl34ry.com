@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #37474F;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #B0BEC5;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #263238;
+    color: #B0BEC5;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.fa-linkedin-square {
+    font-size: 20em;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: #B0BEC5;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
+}
