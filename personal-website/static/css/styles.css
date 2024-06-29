@@ -1,0 +1,139 @@
+/* Ensure the whole document uses flexbox */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Wrapper to contain everything */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto; /* Ensure main can scroll if content is too tall */
+}
+
+/* Your existing styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #37474F;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #B0BEC5;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #263238;
+    color: #B0BEC5;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: #B0BEC5;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+/* Additional CSS for the resume */
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1.text-center {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #37474F;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #546E7A;
+    margin-top: 0.5rem;
+}
+
+.job p {
+    font-size: 1rem;
+    color: #607D8B;
+    line-height: 1.6;
+}
+
+.fa-building {
+    margin-right: 0.5rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
