@@ -1,11 +1,9 @@
 import os
 from flask import Flask, render_template
-from livereload import Server
 
 def create_app():
     app = Flask(__name__)
 
-    # Disable template caching
     app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.config['DEBUG'] = True
 
@@ -19,19 +17,17 @@ def create_app():
 
     @app.route('/hobbies')
     def hobbies():
-        return render_template('hobbies.html')
+        # Get list of images for places and people galleries
+        places_path = os.path.join(app.static_folder, 'images', 'photos', 'places')
+        people_path = os.path.join(app.static_folder, 'images', 'photos', 'people')
+
+        images_places = [f for f in os.listdir(places_path) if os.path.isfile(os.path.join(places_path, f))]
+        images_people = [f for f in os.listdir(people_path) if os.path.isfile(os.path.join(people_path, f))]
+
+        return render_template('hobbies.html', images_places=images_places, images_people=images_people)
 
     return app
 
 if __name__ == '__main__':
     app = create_app()
-
-    # Set environment variables
-    os.environ['FLASK_ENV'] = 'development'
-
-    # Set up livereload server
-    server = Server(app.wsgi_app)
-    server.watch('templates/*.html')
-    server.watch('static/css/*.css')
-    server.watch('static/js/*.js')
-    server.serve(port=5000, host='127.0.0.1', debug=True)
+    app.run(debug=True)
