@@ -20,7 +20,8 @@ main {
 /* Your existing styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #121212;
+    color: #E0E0E0;
 }
 
 header {
@@ -78,31 +79,34 @@ footer a:hover {
 
 /* Additional CSS for the resume */
 .container {
-    background-color: #ffffff;
+    background-color: #1E1E1E;
     border-radius: 8px;
     padding: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h1.text-center {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #E0E0E0;
 }
 
 h2 {
     font-size: 1.75rem;
-    color: #37474F;
+    color: #BB86FC;
+    margin-bottom: 2px;
 }
 
 h3 {
     font-size: 1.5rem;
-    color: #546E7A;
-    margin-top: 0.5rem;
+    color: #03DAC6;
+    margin-top: 3px;
+    margin-bottom: 10px;
 }
 
 .job p {
     font-size: 1rem;
-    color: #607D8B;
+    color: #CFD8DC;
     line-height: 1.6;
 }
 
@@ -115,6 +119,7 @@ h3 {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.2s;
+    background-color: #272727;
 }
 
 .card:hover {
@@ -122,18 +127,21 @@ h3 {
 }
 
 .card-img-top {
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
 .card-title {
     font-size: 1.25rem;
-    color: #333;
+    color: #E0E0E0;
 }
 
 .card-text {
     font-size: 1rem;
-    color: #666;
+    color: #B0BEC5;
     line-height: 1.6;
 }
 
+.resume-company {
+    margin-bottom: 2px;
+}

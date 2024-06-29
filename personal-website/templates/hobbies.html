@@ -4,26 +4,27 @@
 <div class="container">
     <h1 class="text-center my-4">Hobbies</h1>
     <div class="row justify-content-center">
-        <div class="col-md-5 mb-4">
+        <!-- First Card -->
+        <div class="col-md-4 mb-4">
             <div class="card shadow-sm">
-                <img src="{{ url_for('static', filename='images/photography.jpg') }}" alt="Photography" class="card-img-top">
+                <img src="{{ url_for('static', filename='images/photos/places/01-harris-sunset.jpg') }}" alt="Landscape photography from the Pacific Northwest and beyond" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Photography</h5>
+                    <h5 class="card-title">Places</h5>
                     <p class="card-text">Landscape photography from the Pacific Northwest and my travels beyond.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-5 mb-4">
+        
+        <!-- Second Card -->
+        <div class="col-md-4 mb-4">
             <div class="card shadow-sm">
-                <img src="{{ url_for('static', filename='images/3d-printing.jpg') }}" alt="3D Printing" class="card-img-top">
+                <img src="{{ url_for('static', filename='images/photos/people/01-justin.jpg') }}" alt="Portraits of people I've met along the way" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">3D Printing</h5>
-                    <p class="card-text">3D printing is one of my favorite hobbies because it allows me to turn digital designs into real, tangible objects. I love experimenting with different materials and techniques to create both functional items and artistic pieces. It's a blend of creativity and technology that I find incredibly rewarding.</p>
+                    <h5 class="card-title">People</h5>
+                    <p class="card-text">Some pictures of people I've met along the way.</p>
                 </div>
             </div>
         </div>
-        <!-- Add more hobbies here -->
     </div>
 </div>
 {% endblock %}
-
