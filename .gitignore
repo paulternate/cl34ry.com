@@ -1,6 +1,8 @@
 // cl34ry directory
 cl34ry/
 venv/
+__pycache__/
+
 
 # Ignore all hidden directories and files
 .*
