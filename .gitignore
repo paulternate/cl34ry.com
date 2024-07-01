@@ -1,5 +1,6 @@
 // cl34ry directory
 cl34ry/
+venv/
 
 # Ignore all hidden directories and files
 .*

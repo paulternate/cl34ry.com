@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    {% if config['DEBUG'] %}
+        <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+    {% endif %}
 </head>
 <body>
     <div class="wrapper">
@@ -37,5 +40,6 @@
             <p>&copy; 2024 Paul Cleary</p>
         </footer>
     </div>
+    {% block scripts %}{% endblock %}
 </body>
 </html>
