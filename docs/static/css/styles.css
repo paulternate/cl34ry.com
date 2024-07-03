@@ -1,0 +1,248 @@
+/* General styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+header {
+    background-color: #37474F;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #B0BEC5;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #263238;
+    color: #B0BEC5;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: #B0BEC5;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.container {
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1.text-center {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #E0E0E0;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #BB86FC;
+    margin-bottom: 2px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #03DAC6;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.job p {
+    font-size: 1rem;
+    color: #CFD8DC;
+    line-height: 1.6;
+}
+
+.fa-building {
+    margin-right: 0.5rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    background-color: #272727;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #E0E0E0;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #B0BEC5;
+    line-height: 1.6;
+}
+
+.resume-company {
+    margin-bottom: 2px;
+}
+
+/* Gallery CSS */
+.modal-body {
+    background-color: #1E1E1E;
+    padding-bottom: 0;
+}
+
+
+/* Ensure the container is centered and has padding */
+.large-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    height: 60vh; /* Adjust this value if needed */
+}
+
+/* Ensure the large image fits within its container */
+.large-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.thumbnail-slider {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.thumbnail-slider img {
+    width: 100px; /* Set a fixed width for thumbnails */
+    height: 100px; /* Set a fixed height for thumbnails */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    margin-right: 10px; /* Add some spacing between thumbnails */
+}
+
+.thumbnail-slider::-webkit-scrollbar {
+    height: 8px; /* Height of the horizontal scrollbar */
+}
+
+.thumbnail-slider::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+}
+
+.thumbnail-slider::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+/* Optional: Add hover effect for thumbnails */
+.thumbnail-slider .img-thumbnail:hover {
+    border-color: #000; /* Change to desired color */
+}
+
+.modal-header {
+    background-color: #37474F; /* Darker background for contrast */
+    color: #FFFFFF; /* White text for readability */
+    padding: 1rem 1.5rem; /* More padding for better spacing */
+    border-bottom: 1px solid #B0BEC5; /* Subtle border for separation */
+    font-size: 1.25rem; /* Increase font size for readability */
+    display: flex;
+    justify-content: space-between; /* Space out header content */
+    align-items: center; /* Center items vertically */
+}
+
+.modal-header .close {
+    color: #FFFFFF; /* Ensure close button is visible */
+    font-size: 1.5rem; /* Larger close button */
+}
+
+.modal-title {
+    margin: 0; /* Remove default margin */
+    font-weight: bold; /* Make title stand out */
+}
+
+.skill-level {
+        display: flex;
+        align-items: center;
+    }
+
+.filled-pill,
+.half-filled-pill,
+.unfilled-pill {
+    display: inline-block;
+    height: 12px;
+    margin-right: 2px;
+    border-radius: 10px;
+    flex-grow: 1;
+    background-color: #007bff;
+}
+
+.half-filled-pill {
+    background: linear-gradient(to right, #007bff 50%, #e9ecef 50%);
+}
+
+.unfilled-pill {
+    background-color: #e9ecef;
+}
