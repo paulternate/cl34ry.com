@@ -115,12 +115,7 @@ h3 {
     border: none;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.2s;
     background-color: #272727;
-}
-
-.card:hover {
-    transform: translateY(-5px);
 }
 
 .card-link {
