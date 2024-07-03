@@ -3,6 +3,7 @@ import sys
 from flask import Flask, render_template
 from livereload import Server
 from flask_frozen import Freezer
+from werkzeug.serving import run_simple
 
 def create_app():
     app = Flask(__name__)
@@ -17,13 +18,13 @@ def create_app():
     def resume():
         return render_template('resume.html')
 
-    @app.route('/hobbies.html')
-    def hobbies():
-        images_places = [f for f in os.listdir(os.path.join(app.static_folder, 'images/photos/places')) if os.path.isfile(os.path.join(app.static_folder, 'images/photos/places', f))]
-        images_people = [f for f in os.listdir(os.path.join(app.static_folder, 'images/photos/people')) if os.path.isfile(os.path.join(app.static_folder, 'images/photos/people', f))]
-        print('Images Places:', images_places)  # Debug print
-        print('Images People:', images_people)  # Debug print
-        return render_template('hobbies.html', images_places=images_places, images_people=images_people)
+    # @app.route('/hobbies.html')
+    # def hobbies():
+    #     images_places = [f for f in os.listdir(os.path.join(app.static_folder, 'images/photos/places')) if os.path.isfile(os.path.join(app.static_folder, 'images/photos/places', f))]
+    #     images_people = [f for f in os.listdir(os.path.join(app.static_folder, 'images/photos/people')) if os.path.isfile(os.path.join(app.static_folder, 'images/photos/people', f))]
+    #     print('Images Places:', images_places)  # Debug print
+    #     print('Images People:', images_people)  # Debug print
+    #     return render_template('hobbies.html', images_places=images_places, images_people=images_people)
 
     return app
 
@@ -35,7 +36,7 @@ freezer = Freezer(app)
 # Register URL generators
 @freezer.register_generator
 def url_generators():
-    urls = ['/', '/resume.html', '/hobbies.html']
+    urls = ['/', '/resume.html']
     for url in urls:
         print(f"Yielding URL: {url}")  # Debug print
         yield url
@@ -50,11 +51,13 @@ if __name__ == '__main__':
 
         if command == 'run':
             # Set up livereload server for development
-            server = Server(app.wsgi_app)
-            server.watch('templates/*.html')
-            server.watch('static/css/*.css')
-            server.watch('static/js/*.js')
-            server.serve(port=5000, host='127.0.0.1', debug=True)
+            # server = Server(app.wsgi_app)
+            # server.watch('templates/*.html')
+            # server.watch('static/css/*.css')
+            # server.watch('static/js/*.js')
+            # server.serve(port=5000, host='127.0.0.1', debug=True)
+
+            run_simple('localhost', 5000, app, use_reloader=True, extra_files=[''])
         
         elif command == 'freeze':
             try:
