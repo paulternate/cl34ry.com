@@ -19,4 +19,5 @@ A Flask server can be run locally in a Python virtual environment for developmen
 
 The site can be built for GitHub Pages by running the following commands:
 
-1. Run `python app.py freeze` to build the site.
+1. Run `python app.py freeze` to build the site to the `docs` directory.
+2. Push the changes to your target branch and set GitHub pages to deploy from there. 
